@@ -1,8 +1,6 @@
-// import "./globals.css";
+import "./globals.css";
 
 import * as stylex from "@stylexjs/stylex";
-import { Button } from "./Button";
-// import NavLink from "./NavLink";
 
 export const metadata = {
   title: "StyleX + Next",
