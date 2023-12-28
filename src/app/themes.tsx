@@ -5,6 +5,6 @@ import { colors } from "./tokens.stylex";
 const DARK = "@media (prefers-color-scheme: dark)";
 
 export const dracula = stylex.createTheme(colors, {
-  primaryColors: { default: "blue", [DARK]: "purple" },
+  primaryColors: { default: "red", [DARK]: "purple" },
   primaryDarkColors: { default: "green", [DARK]: "blue" },
 });

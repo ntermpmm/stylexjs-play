@@ -58,13 +58,17 @@ const styles = stylex.create({
   }),
 });
 
-function generateRandomNumber() {
-  return Math.floor(Math.random() * 100); // Generates a random number between 0 and 99
-}
-
 export default function Home() {
-  const [randomNumber, setRandomNumber] = useState(generateRandomNumber());
+  const [randomNumber, setRandomNumber] = useState(0);
   const [buttonState, setButtonState] = useState(false);
+
+  function generateRandomNumber() {
+    return Math.floor(Math.random() * 100); // Generates a random number between 0 and 99
+  }
+
+  useEffect(() => {
+    setRandomNumber(generateRandomNumber());
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
