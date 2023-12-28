@@ -5,7 +5,6 @@ import { Button } from "./Button";
 import { spacing } from "./tokens.stylex";
 import { dracula } from "./themes";
 import Form from "./Form";
-import NavBar from "./NavBar";
 
 const MEDIA_MOBILE = "@media (min-width: 480px)";
 
@@ -55,6 +54,7 @@ const styles = stylex.create({
   },
   dynamic: (value) => ({
     fontSize: value,
+    backgroundColor: "black",
   }),
 });
 
