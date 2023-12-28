@@ -1,3 +1,4 @@
+import NavBar from "./NavBar";
 import "./globals.css";
 
 import * as stylex from "@stylexjs/stylex";
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <NavBar />
         <main {...stylex.props(styles.main)}>{children}</main>
       </body>
     </html>
